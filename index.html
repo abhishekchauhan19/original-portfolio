@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="#home">Portfolio</a>
+        </div>
+        <div class="menu-toggle">☰</div>
+        <div class="right menu">
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+            
+        </div>
+    </nav>
+
+    <section id="home">
+        <div id="homepara">
+        <p style="font-size: 50px; font-weight: bolder;">Hi, it's <span style="color: whitesmoke;">Abhishek Chauhan.</span></p>
+        <p style="font-size: 40px; font-weight: bolder;color: whitesmoke;">I'm an enthusiast <span class="typing-text"><pre id="change" style="display: inline-block;color: purple;font-size: 50px;"> &nbsp;</pre></span></p>
+        <p style="font-size: x-large; color: whitesmoke;">"As a motivated and enthusiastic fresher with hands-on experience in frontend development, I have successfully built and deployed dynamic web projects using HTML, CSS, JavaScript, and React. Eager to apply my skills and continue learning in a challenging and growth-oriented environment. Additionally, I have a background in commerce and a strong interest in accounting and managing books of accounts."</p></div>
+        <div id="homepic"><img src="frontend.jpeg" alt=""></div>
+
+    </section>
+
+    <section id="education">
+        <div class="education" >
+            <span style="color:purple;font-size: xx-large;font-weight: bold;">Education</span>
+            <div>
+               <p> => Bachelor of Commerce (hons.)
+                Aggarwal college,faridabad
+                University Name: M.D.U Rohtak
+                Expected Year of Completion: 2025
+<br>
+
+                => Class 12 (Senior Secondary)
+                    Swami Vivekanand Senior Secondary School, Palwal
+                            CBSE Board
+                        Year of Completion: 2022
+                        Percentage: 76%
+<br>
+                    => Class 10 (Secondary)
+                 Swami Vivekanand Senior Secondary School, Palwal
+                    CBSE Board
+                    Year of Completion: 2020
+                        Percentage: 70%
+                    </p>
+            </div>
+        </div>
+        <img src="educatiobackground.jpg" alt="">
+    </section>
+
+    <section id="skills">
+        <div id="headingSkill" style="display: flex;justify-content: center;align-items: center;"><h2>Skills</h2></div>
+        <div id="skills" class="skillBox">
+            <div class="mainBox"><div class="picBox"><img src="msword pic.jpg" alt=""><div class="NameBox">MS-WORD</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="tally.png" alt=""><div class="NameBox">TALLY PRIME</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="CSS-f0ecea9c.png" alt=""><div class="NameBox">CSS</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="TAILWIND-e0866957.png" alt=""><div class="NameBox">TAILWIND CSS</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="PYTHON-e24020ae.png" alt=""><div class="NameBox">PYTHON</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="excelpic.png" alt=""><div class="NameBox">MS-EXCEL</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="SQL-6142feab.png" alt=""><div class="NameBox">MY SQL</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="powerpoint.jpg" alt=""><div class="NameBox">POWERPOINT</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="LINUX-6bd179d5.png" alt=""><div class="NameBox">LINUX</div></div></div>
+            <div class="mainBox"><div class="picBox"><img src="GITHUB-d83ddf4e.png" alt=""><div class="NameBox">GITHUB</div></div></div>
+            
+        </div>
+
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div id="certifications" class="certifications">
+            <div class="certificate">
+                <img src="1.jpeg" alt="Certificate 1">
+                <p>Certificate 1 Description</p>
+            </div>
+            <div class="certificate">
+                <img src="2.jpeg" alt="Certificate 2">
+                <p>Certificate 2 Description</p>
+            </div>
+            <div class="certificate">
+                <img src="3.jpeg" alt="Certificate 3">
+                <p>Certificate 3 Description</p>
+            </div>
+            <div class="certificate">
+                <img src="4.jpeg" alt="Certificate 4">
+                <p>Certificate 4 Description</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="popup" id="popup">
+        <img src="" alt="Popup Certificate" id="popup-img">
+    </div>
+
+    <section id="contact">
+        <div id="contact" class="parentContact" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <span class="contactt" style="color: rebeccapurple;">CONTACT DETAILS</span>
+            <span class="phoneNumber"><span class="contact">Contact Number:</span> +919729299685</span>
+            <span class="mail"><span class="contact">Mail Id:</span> chauhanabhishek2819@gmail.com</span>
+            <span class="address"><span class="contact">Address:</span> Baghola, Palwal, Haryana</span>
+        </div>
+        <div class="contactForm">
+            <h3>Contact Me</h3>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; background-color: #f1f1f1;">
+        <p>&copy; 2023 Abhishek Chauhan. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

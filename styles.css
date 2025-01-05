@@ -1,0 +1,261 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body {
+    padding-top: 60px; /* To avoid content being hidden under fixed navbar */
+}
+/* Additional styles from the previous example */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#homepic img{
+    background-color: black;
+}
+.menu-toggle{
+ display: none;
+}
+p{
+    color:black;
+}
+nav .left, nav .right {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+section {
+    padding: 60px 20px;
+    min-height: 90vh;
+}
+#home {
+    background-color: rgb(29,30,32);
+    display: inline-flex;
+    
+}
+#education {
+    background-color:yellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#skills {
+    background: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+#contact {
+    background-color: #333;
+}
+#certifications {
+    background: linear-gradient(135deg, #001f3f, #003366, #004080, #0059b3, #0073e6);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+#certifications h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.certificate {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;
+}
+
+.certificate p {
+    padding: 15px;
+    font-size: 1em;
+}
+
+.certificate:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 20px;
+    background-color: #333;
+    color: white;
+}
+.right {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .right {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+    .menu a {
+        padding: 10px;
+        border-top: 1px solid #555;
+    }
+    .menu.active {
+        display: flex;
+    }
+}
+body {
+    padding-top: 60px;
+}
+.education {
+    width: 25%;
+    /* margin-left: 31vh; */
+    padding-left: 10vh;
+    font-size: x-large;
+    border-left: solid yellow;
+}
+.skillBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.mainBox{
+    margin: 1vh 1vh;
+    border: solid blue;
+    border-top: none;
+    height: 35vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+.mainBox img{
+    height: 150px;
+    width: 150px;
+
+}
+.parentContact {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.contactt {
+    font-size: 2rem;
+    font-weight: bold;
+    color: brown;
+}
+
+.contact, .phoneNumber, .mail, .address {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.parentContact span{
+    color: white;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+.contactForm {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactForm label {
+    margin-top: 10px;
+}
+
+.contactForm input {
+    margin-top: 5px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.contactForm button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
